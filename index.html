@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="HEALTH KEEPER">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0134d4">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Title-->
+    <title>Health Keeper</title>
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <!-- Favicon-->
+    <link rel="icon" href="assets/img/core-img/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/img/icons/icon-96x96.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/icons/icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="assets/img/icons/icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icons/icon-180x180.png">
+    <!-- CSS Libraries-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="assets/css/apexcharts.css">
+    <!-- Core Stylesheet-->
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- Web App Manifest-->
+    <!-- <link rel="manifest" href="manifest.json"> -->
+    <script>
+      // You can also use "$(window).load(function() {"
+        $(function () {
+    
+          // Slideshow 1
+          $("#slider1").responsiveSlides({
+            maxwidth: 1600,
+            speed: 600
+          });
+    });
+    </script>
+  </head>
+  <body>
+    <!-- Preloader-->
+    <div class="preloader d-flex align-items-center justify-content-center" id="preloader">
+      <div class="spinner-grow text-primary" role="status">
+        <div class="sr-only">Loading...</div>
+      </div>
+    </div>
+    <!-- Internet Connection Status-->
+    <div class="internet-connection-status" id="internetStatus"></div>
+    <!-- Header Area-->
+    <div class="header-area" id="headerArea">
+      <div class="container">
+        <!-- Paste your Header Content from here-->
+        <!-- # Header Five Layout-->
+        <!-- # Copy the code from here ...-->
+        <!-- Header Content-->
+        <div class="header-content header-style-five position-relative d-flex align-items-center justify-content-between">
+          <!-- Logo Wrapper-->
+          <div class="logo-wrapper"><a href="index.html"><h5><b>Health Keeper</b></h5></a></div>
+          <!-- Navbar Toggler-->
+          <div class="navbar--toggler" id="affanNavbarToggler"><span class="d-block"></span><span class="d-block"></span><span class="d-block"></span></div>
+        </div>
+        <!-- # Header Five Layout End-->
+      </div>
+    </div>
+    <!-- Dark mode switching-->
+    <div class="dark-mode-switching">
+      <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+        <div class="dark-mode-text text-center"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z"/>
+</svg>
+          <p class="mb-0">Switching to dark mode</p>
+        </div>
+        <div class="light-mode-text text-center"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+<path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+</svg>
+          <p class="mb-0">Switching to light mode</p>
+        </div>
+      </div>
+    </div>
+    <!-- Sidenav Black Overlay-->
+    <div class="sidenav-black-overlay"></div>
+    <!-- Side Nav Wrapper-->
+    <div class="sidenav-wrapper" id="sidenavWrapper">
+      <!-- Go Back Button-->
+      <div class="go-back-btn" id="goBack">
+        <svg class="bi bi-x" width="24" height="24" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"></path>
+          <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"></path>
+        </svg>
+      </div>
+      <!-- Sidenav Profile-->
+      <div class="sidenav-profile">
+        <div class="sidenav-style1"></div>
+        <!-- User Thumbnail-->
+        <div class="user-profile"><img src="assets/img/bg-img/user1.png" alt=""></div>
+        <!-- User Info-->
+        <div class="user-info">
+          <h6 class="user-name mb-0">Health Keeper</h6><span>Keep your health in here</span>
+        </div>
+      </div>
+      <!-- Sidenav Nav-->
+      <ul class="sidenav-nav ps-0">
+        <li><a href="index.html">
+            <svg width="18" height="18" viewBox="0 0 16 16" class="bi bi-house-door" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z"/>
+<path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+</svg>Home</a></li>
+     
+        <!-- <li><a href="#">
+            <svg width="18" height="18" viewBox="0 0 16 16" class="bi bi-gear" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" d="M8.837 1.626c-.246-.835-1.428-.835-1.674 0l-.094.319A1.873 1.873 0 0 1 4.377 3.06l-.292-.16c-.764-.415-1.6.42-1.184 1.185l.159.292a1.873 1.873 0 0 1-1.115 2.692l-.319.094c-.835.246-.835 1.428 0 1.674l.319.094a1.873 1.873 0 0 1 1.115 2.693l-.16.291c-.415.764.42 1.6 1.185 1.184l.292-.159a1.873 1.873 0 0 1 2.692 1.116l.094.318c.246.835 1.428.835 1.674 0l.094-.319a1.873 1.873 0 0 1 2.693-1.115l.291.16c.764.415 1.6-.42 1.184-1.185l-.159-.291a1.873 1.873 0 0 1 1.116-2.693l.318-.094c.835-.246.835-1.428 0-1.674l-.319-.094a1.873 1.873 0 0 1-1.115-2.692l.16-.292c.415-.764-.42-1.6-1.185-1.184l-.291.159A1.873 1.873 0 0 1 8.93 1.945l-.094-.319zm-2.633-.283c.527-1.79 3.065-1.79 3.592 0l.094.319a.873.873 0 0 0 1.255.52l.292-.16c1.64-.892 3.434.901 2.54 2.541l-.159.292a.873.873 0 0 0 .52 1.255l.319.094c1.79.527 1.79 3.065 0 3.592l-.319.094a.873.873 0 0 0-.52 1.255l.16.292c.893 1.64-.902 3.434-2.541 2.54l-.292-.159a.873.873 0 0 0-1.255.52l-.094.319c-.527 1.79-3.065 1.79-3.592 0l-.094-.319a.873.873 0 0 0-1.255-.52l-.292.16c-1.64.893-3.433-.902-2.54-2.541l.159-.292a.873.873 0 0 0-.52-1.255l-.319-.094c-1.79-.527-1.79-3.065 0-3.592l.319-.094a.873.873 0 0 0 .52-1.255l-.16-.292c-.892-1.64.902-3.433 2.541-2.54l.292.159a.873.873 0 0 0 1.255-.52l.094-.319z"/>
+<path fill-rule="evenodd" d="M8 5.754a2.246 2.246 0 1 0 0 4.492 2.246 2.246 0 0 0 0-4.492zM4.754 8a3.246 3.246 0 1 1 6.492 0 3.246 3.246 0 0 1-6.492 0z"/>
+</svg>Settngs</a></li> -->
+        <li>
+          <div class="night-mode-nav">
+            <svg width="18" height="18" viewBox="0 0 16 16" class="bi bi-moon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z"/>
+</svg>Night Mode<div class="form-check form-switch">
+<input class="form-check-input form-check-success" type="checkbox" id="darkSwitch">
+</div>
+          </div>
+        </li>
+      
+      </ul>
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="page-content-wrapper">
+      <!-- Hero Slides-->
+      <div class="owl-carousel-one owl-carousel">
+  
+        <!-- Single Hero Slide-->
+        <div class="single-hero-slide bg-overlay" style="background-image: url('assets/img/bg-img/33.jpg')">
+          <div class="slide-content h-100 d-flex align-items-center text-center">
+            <div class="container">
+              <h4 class="text-white mb-1" data-animation="fadeInUp" data-delay="100ms" data-wow-duration="1000ms">Health Keeper</h4>
+              <p class="text-white mb-4" data-animation="fadeInUp" data-delay="400ms" data-wow-duration="1000ms">WELCOME TO HEALTH KEEPER</p><a class="btn btn-creative btn-warning" href="hk/register.php" data-animation="fadeInUp" data-delay="800ms" data-wow-duration="500ms">Register Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Single Hero Slide-->
+        <div class="single-hero-slide bg-overlay" style="background-image: url('assets/img/bg-img/1.jpg')">
+          <div class="slide-content h-100 d-flex align-items-center text-center">
+            <div class="container">
+              <h4 class="text-white mb-1" data-animation="fadeInUp" data-delay="100ms" data-wow-duration="1000ms">YOUR REPORTS ARE SAFE AND SECURE WITH US</h4>
+              <p class="text-white mb-4" data-animation="fadeInUp" data-delay="400ms" data-wow-duration="1000ms"></p><a class="btn btn-creative btn-warning" href="hk/register.php" data-animation="fadeInUp" data-delay="800ms" data-wow-duration="500ms">REGISTRATION</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Welcome Toast-->
+      <div class="toast toast-autohide custom-toast-1 toast-danger home-page-toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="10000" data-bs-autohide="true">
+        <div class="toast-body">
+          <svg class="bi bi-bookmark-check text-white" width="30" height="30" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"></path>
+            <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"></path>
+          </svg>
+          <div class="toast-text ms-3 me-2">
+            <p class="mb-1 text-white">Welcome to Health Keeper!</p><small class="d-block">Click the "Add to Home Screen" button &amp; enjoy it like an app.</small>
+          </div>
+          <button class="btn btn-close btn-close-white position-relative p-1 ms-auto" type="button" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div><br>
+
+
+      <div class="container-lg">
+        <div class="card bg-primary mb-3 shadow-sm bg-gradient direction-rtl">
+          <div class="card-body">
+            <h2 class="text-white">Welcome to Health Keeper</h2>
+            <p class="text-white mb-4">Please you may need login to connect with us</p>
+            <div class="direction-rtl"><a class="btn m-1 btn-block btn-lg btn-success" href="hk/login.php"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            </svg> Patients Registeration</a></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container-lg">
+        <div class="card">
+          <div class="card-body">
+            <h2>Customer Review</h2>
+            <div class="testimonial-slide owl-carousel testimonial-style3">
+              <!-- Single Testimonial Slide-->
+              <div class="single-testimonial-slide">
+                <div class="text-content"><span class="d-inline-block badge bg-warning mb-2"><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill"></i></span>
+                  <h6 class="mb-2">The Work is amazing...greatly helps to store my medical records </h6><span class="d-block">Joseph.h.george</span>
+                </div>
+              </div>
+              <!-- Single Testimonial Slide-->
+              <div class="single-testimonial-slide">
+                <div class="text-content"><span class="d-inline-block badge bg-warning mb-2"><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill"></i></span>
+                  <h6 class="mb-2">All complete, <br> great craft.</h6><span class="d-block">Ahmed </span>
+                </div>
+              </div>
+              <!-- Single Testimonial Slide-->
+              <div class="single-testimonial-slide">
+                <div class="text-content"><span class="d-inline-block badge bg-warning mb-2"><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill"></i></span>
+                  <h6 class="mb-2">Awesome work<br> Excellent support</h6><span class="d-block">Jubair al ghazi</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><br>
+
+
+      <div class="container-lg">
+        <div class="card bg-dark">
+          <div class="card-body">
+            <h4><font color="white">Department Login Session</font></h4>
+
+            <div class="accordion accordion-style-four" id="accordionStyle4">
+              <!-- Single accordion-->
+              <div class="accordion-item">
+                <div class="accordion-header" id="accordionTen">
+                  <h6 data-bs-toggle="collapse" data-bs-target="#accordionStyleTen" aria-expanded="false" aria-controls="accordionStyleTen" class="collapsed">
+                    -   Hospital<svg width="20" height="20" viewBox="0 0 16 16" class="bi bi-caret-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" d="M3.204 5L8 10.481 12.796 5H3.204zm-.753.659l4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"></path>
+</svg>
+                  </h6>
+                </div>
+                <div class="accordion-collapse collapse" id="accordionStyleTen" aria-labelledby="accordionTen" data-bs-parent="#accordionStyle4">
+                  <div class="accordion-body">
+                    <p class="mb-0">
+                      <a class="btn m-1  btn-primary" href="hk/hospital/index.php"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hospital" viewBox="0 0 16 16">
+                        <path d="M8.5 5.034v1.1l.953-.55.5.867L9 7l.953.55-.5.866-.953-.55v1.1h-1v-1.1l-.953.55-.5-.866L7 7l-.953-.55.5-.866.953.55v-1.1h1ZM13.25 9a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5ZM13 11.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5Zm.25 1.75a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5Zm-11-4a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 3 9.75v-.5A.25.25 0 0 0 2.75 9h-.5Zm0 2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5ZM2 13.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5Z"/>
+                        <path d="M5 1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1a1 1 0 0 1 1 1v4h3a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3V3a1 1 0 0 1 1-1V1Zm2 14h2v-3H7v3Zm3 0h1V3H5v12h1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3Zm0-14H6v1h4V1Zm2 7v7h3V8h-3Zm-8 7V8H1v7h3Z"/>
+                      </svg> Hospital Login</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Single accordion-->
+              <div class="accordion-item">
+                <div class="accordion-header" id="accordion11">
+                  <h6 class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordionStyle11" aria-expanded="false" aria-controls="accordionStyle11">
+                    -   Admin <svg width="20" height="20" viewBox="0 0 16 16" class="bi bi-caret-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" d="M3.204 5L8 10.481 12.796 5H3.204zm-.753.659l4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"></path>
+</svg>
+                  </h6>
+                </div>
+                <div class="accordion-collapse collapse" id="accordionStyle11" aria-labelledby="accordion11" data-bs-parent="#accordionStyle4" >
+                  <div class="accordion-body">
+                    <p class="mb-0">
+                      <a class="btn m-1  btn-danger" href="hk/admin"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-fill" viewBox="0 0 16 16">
+                        <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
+                      </svg> Admin Login</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+     
+     
+      <div class="pb-3"></div>
+    </div>
+  
+    <!-- All JavaScript Files-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/default/internet-status.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/default/dark-mode-switch.js"></script>
+    <script src="assets/js/ion.rangeSlider.min.js"></script>
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/default/active.js"></script>
+    <script src="assets/js/default/clipboard.js"></script>
+    <!-- PWA-->
+    <script src="assets/js/pwa.js"></script>
+  </body>
+
+</html>
